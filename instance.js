@@ -1,0 +1,27 @@
+"use strict";
+
+{
+	const SDK = globalThis.SDK;
+    const PLUGIN_CLASS = SDK.Plugins.Rex_FirebaseAPI;
+
+	PLUGIN_CLASS.Instance = class Rex_FirebaseAPIInstance extends SDK.IInstanceBase
+	{
+		constructor(sdkType, inst)
+		{
+			super(sdkType, inst);
+		}
+		Release()
+		{
+		}
+		OnCreate()
+		{
+		}
+		OnPropertyChanged(id, value)
+		{
+		}
+		LoadC2Property(name, valueString)
+		{
+			return false;       // not handled
+		}
+	};
+}
